@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<header>
+    <a href="index.html"><img src="images/logo.png" alt="" class="header-logo"></a>
+    <img src="images/index-banner.jpg" alt="" class="header-bg">
+    <img src="images/header-icon.png" alt="" class="header-icon-change">
+
+</header>
+<div class="header-detail">
+    <img src="images/xx-icon.png" alt="" class="header-icon-xx">
+    <div class="header-detail-center">
+        <ul>
+            <li><a href="index.html"><span>首 页</span> / Home</a></li>
+            <li><a href="score.html"><span>成 绩</span> / Achievement</a></li>
+            <li><a href="team-teacher.html"><span>团 队</span> / Team</a></li>
+            <li><a href="bycup.html"><span>博 昱 杯</span> / Bo Yu Cup</a></li>
+            <li><a href="contact.html"><span>联 系</span> / Contact</a></li>
+        </ul>
+        <div class="contact-center-content clear">
+            <div>
+                <img src="images/logo1.png" alt="">
+                <p><img src="images/GPS-icon3.png" alt=""><span>武汉市江岸区解放大道2463号博昱美术培训学校 （轻轨一号线徐州新村站B出口旁100米）</span></p>
+                <p><img src="images/tel-icon3.png" alt=""><span>153 2719 0902</span></p>
+                <p><img src="images/wx-icon1.png" alt=""><span>bbydhfccg</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var viewHeight = $(window).height(); //获取浏览器可视高
+    $("header").css("paddingBottom",0);
+    $("header").css("height", viewHeight);
+    $(".header-bg").css("height", "100%");
+    $(window).resize(function() { //浏览器窗口变化事件
+        viewHeight = $(window).height(); //获取浏览器可视高
+        $(".index-header").css("height", viewHeight);
+    })
+</script>
+<nav>
+    <ul>
+        <li class="active"><a href="index.html">首页</a></li>
+        <li>
+            <a href="about-summary.html">关于<img src="images/nav-jt.png" alt=""><img src="images/nav-jt-active.png" alt=""></a>
+            <div class="nav-menu">
+                <a href="about-summary.html">博昱概况</a>
+                <a href="about-feature.html">博昱特色</a>
+                <a href="about-en.html">学校环境</a>
+            </div>
+        </li>
+        <li>
+            <a href="score.html">成绩<img src="images/nav-jt.png" alt=""><img src="images/nav-jt-active.png" alt=""></a>
+            <div class="nav-menu">
+                <a href="score.html">18届校考成绩</a>
+                <a href="score.html">18届统考成绩</a>
+                <a href="score.html">17届录取成绩</a>
+                <a href="score.html">三届三美录取</a>
+            </div>
+        </li>
+        <li>
+            <a href="apply.html">招生<img src="images/nav-jt.png" alt=""><img src="images/nav-jt-active.png" alt=""></a>
+            <div class="nav-menu">
+                <a href="class.html">博昱班级</a>
+                <a href="apply.html">报名</a>
+            </div>
+        </li>
+        <li>
+            <a href="team-teacher.html">团队<img src="images/nav-jt.png" alt=""><img src="images/nav-jt-active.png" alt=""></a>
+            <div class="nav-menu">
+                <a href="team-manage.html">管理团队</a>
+                <a href="team-teacher.html">教师团队</a>
+            </div>
+        </li>
+        <li>
+            <a href="news.html">资讯<img src="images/nav-jt.png" alt=""><img src="images/nav-jt-active.png" alt=""></a>
+            <div class="nav-menu">
+                <a href="news.html">博昱动态</a>
+                <a href="video.html">视频影像</a>
+                <a href="news.html">家长必读</a>
+                <a href="news.html">统考资讯</a>
+                <a href="news.html">校考资讯</a>
+            </div>
+        </li>
+        <li>
+            <a href="works.html">作品<img src="images/nav-jt.png" alt=""><img src="images/nav-jt-active.png" alt=""></a>
+            <div class="nav-menu">
+                <a href="works.html">素描作品</a>
+                <a href="works.html">速写作品</a>
+                <a href="works.html">色彩作品</a>
+                <a href="works.html">设计作品</a>
+                <a href="works.html">精微作品</a>
+                <a href="works.html">动漫作品</a>
+                <a href="works.html">基础部作品</a>
+            </div>
+        </li>
+        <li>
+            <a href="student.html">校友<img src="images/nav-jt.png" alt=""><img src="images/nav-jt-active.png" alt=""></a>
+            <div class="nav-menu">
+                <a href="student.html">2017届校友</a>
+                <a href="student-video.html">校友风影</a>
+            </div>
+        </li>
+        <li>
+            <a href="bycup.html">博昱杯<img src="images/nav-jt.png" alt=""><img src="images/nav-jt-active.png" alt=""></a>
+            <div class="nav-menu">
+                <a href="bycup.html">第七届博昱杯</a>
+                <a href="bycup-works.html">优秀作品</a>
+                <a href="bycup-result.html">评选结果</a>
+            </div>
+        </li>
+        <li>
+            <a href="contact.html">联系<img src="images/nav-jt.png" alt=""><img src="images/nav-jt-active.png" alt=""></a>
+            <div class="nav-menu">
+                <a href="contact.html">联系方式</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+<div class="index-score">
+    <div class="index-title">
+        <img src="images/index-score-title.png" alt="">
+    </div>
+
+    <div class="index-score-content">
+        <div class="index-score-item">
+            <img src="images/index-score-btn-left.png" alt="左按钮" class="left-btn">
+
+            <a href="content.html" class="index-score-item3"><img src="images/index-score-pic.jpg" alt=""></a>
+            <a href="content.html" class="index-score-item3"><img src="images/index-score-pic.jpg" alt=""></a>
+            <a href="content.html" class="index-score-item3"><img src="images/index-feature-pic.jpg" alt=""></a>
+            <a href="content.html" class="index-score-item3"><img src="images/index-score-pic.jpg" alt=""></a>
+            <a href="content.html" class="index-score-item3"><img src="images/class-pic.jpg" alt=""></a>
+
+            <img src="images/index-score-btn-right.png" alt="右按钮" class="right-btn">
+        </div>
+    </div>
+</div>
+
+<div class="index-stu">
+    <div class="index-title">
+        <img src="images/index-school-title.png" alt="">
+    </div>
+
+    <div class="index-stu-content clear">
+        <a href="">
+            <img src="images/stu-pic.jpg" alt="">
+            <div>
+                <h4>鄢钰</h4>
+                <h4>清华美术学院</h4>
+                <p>湖北省</p>
+                <span><span>状元</span></span>
+            </div>
+        </a>
+        <a href="">
+            <img src="images/stu-pic.jpg" alt="">
+            <div>
+                <h4>鄢钰</h4>
+                <h4>清华美术学院</h4>
+                <p>湖北省</p>
+                <span>第<span>8</span>名</span>
+            </div>
+        </a>
+        <a href="">
+            <img src="images/stu-pic.jpg" alt="">
+            <div>
+                <h4>鄢钰</h4>
+                <h4>清华美术学院</h4>
+                <p>湖北省</p>
+                <span><span>状元</span></span>
+            </div>
+        </a>
+        <a href="">
+            <img src="images/stu-pic.jpg" alt="">
+            <div>
+                <h4>鄢钰</h4>
+                <h4>清华美术学院</h4>
+                <p>湖北省</p>
+                <span>第<span>8</span>名</span>
+            </div>
+        </a>
+        <a href="">
+            <img src="images/stu-pic.jpg" alt="">
+            <div>
+                <h4>鄢钰</h4>
+                <h4>清华美术学院</h4>
+                <p>湖北省</p>
+                <span><span>状元</span></span>
+            </div>
+        </a>
+        <a href="">
+            <img src="images/stu-pic.jpg" alt="">
+            <div>
+                <h4>鄢钰</h4>
+                <h4>清华美术学院</h4>
+                <p>湖北省</p>
+                <span>第<span>8</span>名</span>
+            </div>
+        </a>
+        <a href="">
+            <img src="images/stu-pic.jpg" alt="">
+            <div>
+                <h4>鄢钰</h4>
+                <h4>清华美术学院</h4>
+                <p>湖北省</p>
+                <span><span>状元</span></span>
+            </div>
+        </a>
+        <a href="">
+            <img src="images/stu-pic.jpg" alt="">
+            <div>
+                <h4>鄢钰</h4>
+                <h4>清华美术学院</h4>
+                <p>湖北省</p>
+                <span>第<span>8</span>名</span>
+            </div>
+        </a>
+        <a href="">
+            <img src="images/stu-pic.jpg" alt="">
+            <div>
+                <h4>鄢钰</h4>
+                <h4>清华美术学院</h4>
+                <p>湖北省</p>
+                <span><span>状元</span></span>
+            </div>
+        </a>
+    </div>
+    <a href="student.html" class="more-btn">查看更多</a>
+</div>
+
+<div class="index-class">
+    <div class="index-class-content clear">
+        <a href="">
+            <img src="images/index-class-pic.jpg" alt="">
+        </a>
+        <a href="">
+            <img src="images/index-class-pic.jpg" alt="">
+        </a>
+        <a href="">
+            <img src="images/index-class-pic.jpg" alt="">
+        </a>
+        <a href="">
+            <img src="images/index-class-pic.jpg" alt="">
+        </a>
+        <div class="index-title-s">
+            <img src="images/index-class-title.png" alt="">
+        </div>
+    </div>
+    <a href="class.html" class="more-btn">查看更多</a>
+</div>
+
+<div class="index-teacher">
+    <div class="index-title">
+        <img src="images/index-teacher-title.png" alt="">
+    </div>
+    <div class="index-teacher-content clear">
+        <a href="" class="index-teacher-content-left">
+            <img src="images/teacher-pic.jpg" alt="">
+            <p>杨博<span>博昱画室创始人 / 毕业于中国美术学院</span><img src="images/right-btn3.png" alt=""></p>
+        </a>
+        <div class="index-teacher-content-right">
+            <a href="">
+                <div>
+                    <h4>陈明123</h4>
+                    <p>博昱画室负责人/色彩教学负责人</p>
+                    <p>毕业于中国美术学院</p>
+                </div>
+                <img src="images/teacher-pic.jpg" alt="">
+            </a>
+            <a href="">
+                <div>
+                    <h4>陈明</h4>
+                    <p>博昱画室负责人/色彩教学负责人</p>
+                    <p>毕业于中国美术学院</p>
+                </div>
+                <img src="images/teacher-pic.jpg" alt="">
+            </a>
+            <a href="">
+                <div>
+                    <h4>陈明</h4>
+                    <p>博昱画室负责人/色彩教学负责人</p>
+                    <p>毕业于中国美术学院</p>
+                </div>
+                <img src="images/teacher-pic.jpg" alt="">
+            </a>
+            <a href="">
+                <div>
+                    <h4>陈明</h4>
+                    <p>博昱画室负责人/色彩教学负责人</p>
+                    <p>毕业于中国美术学院</p>
+                </div>
+                <img src="images/teacher-pic.jpg" alt="">
+            </a>
+        </div>
+        <div class="index-teacher-content-right" style="display: none;">
+            <a href="">
+                <div>
+                    <h4>陈明1</h4>
+                    <p>博昱画室负责人/色彩教学负责人</p>
+                    <p>毕业于中国美术学院</p>
+                </div>
+                <img src="images/teacher-pic.jpg" alt="">
+            </a>
+            <a href="">
+                <div>
+                    <h4>陈明</h4>
+                    <p>博昱画室负责人/色彩教学负责人</p>
+                    <p>毕业于中国美术学院</p>
+                </div>
+                <img src="images/teacher-pic.jpg" alt="">
+            </a>
+            <a href="">
+                <div>
+                    <h4>陈明</h4>
+                    <p>博昱画室负责人/色彩教学负责人</p>
+                    <p>毕业于中国美术学院</p>
+                </div>
+                <img src="images/teacher-pic.jpg" alt="">
+            </a>
+            <a href="">
+                <div>
+                    <h4>陈明</h4>
+                    <p>博昱画室负责人/色彩教学负责人</p>
+                    <p>毕业于中国美术学院</p>
+                </div>
+                <img src="images/teacher-pic.jpg" alt="">
+            </a>
+        </div>
+        <div class="index-teacher-content-right" style="display: none;">
+            <a href="">
+                <div>
+                    <h4>陈明2</h4>
+                    <p>博昱画室负责人/色彩教学负责人</p>
+                    <p>毕业于中国美术学院</p>
+                </div>
+                <img src="images/teacher-pic.jpg" alt="">
+            </a>
+            <a href="">
+                <div>
+                    <h4>陈明</h4>
+                    <p>博昱画室负责人/色彩教学负责人</p>
+                    <p>毕业于中国美术学院</p>
+                </div>
+                <img src="images/teacher-pic.jpg" alt="">
+            </a>
+            <a href="">
+                <div>
+                    <h4>陈明</h4>
+                    <p>博昱画室负责人/色彩教学负责人</p>
+                    <p>毕业于中国美术学院</p>
+                </div>
+                <img src="images/teacher-pic.jpg" alt="">
+            </a>
+            <a href="">
+                <div>
+                    <h4>陈明</h4>
+                    <p>博昱画室负责人/色彩教学负责人</p>
+                    <p>毕业于中国美术学院</p>
+                </div>
+                <img src="images/teacher-pic.jpg" alt="">
+            </a>
+        </div>
+        <img src="images/btn-up.png" alt="" class="btn-up">
+        <img src="images/btn-down.png" alt="" class="btn-down">
+    </div>
+    <a href="team-teacher.html" class="more-btn">查看更多</a>
+</div>
+
+<div class="index-feature">
+    <div class="index-title">
+        <img src="images/index-teach-title.png" alt="">
+    </div>
+
+    <div class="index-feature-content">
+        <a href="" class="index-feature-content-top clear">
+            <img src="images/index-feature-pic.jpg" alt="">
+            <section>
+                <h4>NO.1</h4>
+                <h5>以培养学生能力为主的教学方法</h5>
+                <span>Cultivation of comprehensive ability</span>
+                <p>博昱改变纯应试的教学模式，采取培训学生能力为主的教学方法。博昱课程体系不止设置素描、色彩和速写教学，我们在三大主课的基础上，设置了创作课、设计课、大师赏析课、采风课等全方位培训学生能力的课程。学生在...</p>
+                <img src="images/right-btn3.png" alt="">
+            </section>
+        </a>
+        <a href="" class="index-feature-content-top clear" style="display: none;">
+            <img src="images/index-feature-pic.jpg" alt="">
+            <section>
+                <h4>NO.2</h4>
+                <h5>以培养学生能力为主的教学方法</h5>
+                <span>Cultivation of comprehensive ability</span>
+                <p>博昱改变纯应试的教学模式，采取培训学生能力为主的教学方法。博昱课程体系不止设置素描、色彩和速写教学，我们在三大主课的基础上，设置了创作课、设计课、大师赏析课、采风课等全方位培训学生能力的课程。学生在...</p>
+                <img src="images/right-btn3.png" alt="">
+            </section>
+        </a>
+        <a href="" class="index-feature-content-top clear" style="display: none;">
+            <img src="images/index-feature-pic.jpg" alt="">
+            <section>
+                <h4>NO.3</h4>
+                <h5>以培养学生能力为主的教学方法</h5>
+                <span>Cultivation of comprehensive ability</span>
+                <p>博昱改变纯应试的教学模式，采取培训学生能力为主的教学方法。博昱课程体系不止设置素描、色彩和速写教学，我们在三大主课的基础上，设置了创作课、设计课、大师赏析课、采风课等全方位培训学生能力的课程。学生在...</p>
+                <img src="images/right-btn3.png" alt="">
+            </section>
+        </a>
+        <a href="" class="index-feature-content-top clear" style="display: none;">
+            <img src="images/index-feature-pic.jpg" alt="">
+            <section>
+                <h4>NO.4</h4>
+                <h5>以培养学生能力为主的教学方法</h5>
+                <span>Cultivation of comprehensive ability</span>
+                <p>博昱改变纯应试的教学模式，采取培训学生能力为主的教学方法。博昱课程体系不止设置素描、色彩和速写教学，我们在三大主课的基础上，设置了创作课、设计课、大师赏析课、采风课等全方位培训学生能力的课程。学生在...</p>
+                <img src="images/right-btn3.png" alt="">
+            </section>
+        </a>
+        <a href="" class="index-feature-content-top clear" style="display: none;">
+            <img src="images/index-feature-pic.jpg" alt="">
+            <section>
+                <h4>NO.5</h4>
+                <h5>以培养学生能力为主的教学方法</h5>
+                <span>Cultivation of comprehensive ability</span>
+                <p>博昱改变纯应试的教学模式，采取培训学生能力为主的教学方法。博昱课程体系不止设置素描、色彩和速写教学，我们在三大主课的基础上，设置了创作课、设计课、大师赏析课、采风课等全方位培训学生能力的课程。学生在...</p>
+                <img src="images/right-btn3.png" alt="">
+            </section>
+        </a>
+        <a href="" class="index-feature-content-top clear" style="display: none;">
+            <img src="images/index-feature-pic.jpg" alt="">
+            <section>
+                <h4>NO.6</h4>
+                <h5>以培养学生能力为主的教学方法</h5>
+                <span>Cultivation of comprehensive ability</span>
+                <p>博昱改变纯应试的教学模式，采取培训学生能力为主的教学方法。博昱课程体系不止设置素描、色彩和速写教学，我们在三大主课的基础上，设置了创作课、设计课、大师赏析课、采风课等全方位培训学生能力的课程。学生在...</p>
+                <img src="images/right-btn3.png" alt="">
+            </section>
+        </a>
+
+        <ul class="clear" id="js-feature-change">
+            <li class="active">
+                <img src="images/index-feature-pic.jpg" alt="">
+                <p>因材施教</p>
+            </li>
+            <li>
+                <img src="images/index-feature-pic.jpg" alt="">
+                <p>因材施教</p>
+            </li>
+            <li>
+                <img src="images/index-feature-pic.jpg" alt="">
+                <p>创新办学模式</p>
+            </li>
+            <li>
+                <img src="images/index-feature-pic.jpg" alt="">
+                <p>文化+专业录取才是硬道理</p>
+            </li>
+            <li>
+                <img src="images/index-feature-pic.jpg" alt="">
+                <p>家校互动</p>
+            </li>
+            <li>
+                <img src="images/index-feature-pic.jpg" alt="">
+                <p>每周检测</p>
+            </li>
+        </ul>
+    </div>
+    <a href="content.html" class="more-btn">查看更多</a>
+</div>
+
+<div class="index-news">
+    <div class="index-news-content clear">
+        <div class="index-title-s">
+            <img src="images/index-news-title.png" alt="">
+        </div>
+        <a href="" class="index-news-content-left">
+            <img src="images/index-news-pic.jpg" alt="">
+            <p>【注意】免费衔接班开课通知！<img src="images/right-btn3.png" alt=""></p>
+            <span>5-23</span>
+        </a>
+        <div class="index-news-content-right">
+            <a href="">
+                <h4>【博昱】2018年暑假班招生简章</h4>
+                <p>五月已接近尾声，暑假还会远吗？假期临近，你打算如何度过呢？睡觉、打游戏、刷抖音？还是利用暑期...</p>
+                <span>5-22</span>
+            </a>
+            <a href="">
+                <h4>【博昱】2018年暑假班招生简章</h4>
+                <p>五月已接近尾声，暑假还会远吗？假期临近，你打算如何度过呢？睡觉、打游戏、刷抖音？还是利用暑期...</p>
+                <span>5-22</span>
+            </a>
+            <a href="">
+                <h4>【博昱】2018年暑假班招生简章</h4>
+                <p>五月已接近尾声，暑假还会远吗？假期临近，你打算如何度过呢？睡觉、打游戏、刷抖音？还是利用暑期...</p>
+                <span>5-22</span>
+            </a>
+        </div>
+
+    </div>
+    <a href="news.html" class="more-btn">查看更多</a>
+</div>
+
+<div class="index-works">
+    <div class="index-title">
+        <img src="images/index-works-title.png" alt="">
+    </div>
+
+    <div class="tab-nav tab-nav-s">
+        <ul>
+            <li><a>速写作品</a></li>
+            <li><a>素描作品</a></li>
+            <li class="active"><a>色彩作品</a></li>
+            <li><a>设计作品</a></li>
+        </ul>
+    </div>
+
+    <div class="index-works-pic clear">
+        <a><img src="images/works-tp.jpg" alt=""></a>
+        <a><img src="images/works-tp.jpg" alt=""></a>
+        <a><img src="images/works-tp.jpg" alt=""></a>
+        <a><img src="images/works-tp.jpg" alt=""></a>
+        <a><img src="images/works-tp.jpg" alt=""></a>
+        <a><img src="images/works-tp.jpg" alt=""></a>
+        <a><img src="images/works-tp.jpg" alt=""></a>
+    </div>
+    <div class="index-works-pic clear" style="display: none;">
+        <a><img src="images/works-tp.jpg" alt=""></a>
+        <a><img src="images/works-tp.jpg" alt=""></a>
+        <a><img src="images/works-tp.jpg" alt=""></a>
+        <a><img src="images/works-tp.jpg" alt=""></a>
+        <a><img src="images/works-tp.jpg" alt=""></a>
+        <a><img src="images/works-tp.jpg" alt=""></a>
+
+    </div>
+    <div class="index-works-pic clear" style="display: none;">
+        <a><img src="images/works-tp.jpg" alt=""></a>
+        <a><img src="images/works-tp.jpg" alt=""></a>
+        <a><img src="images/works-tp.jpg" alt=""></a>
+        <a><img src="images/works-tp.jpg" alt=""></a>
+        <a><img src="images/works-tp.jpg" alt=""></a>
+
+    </div>
+    <div class="index-works-pic clear" style="display: none;">
+        <a><img src="images/works-tp.jpg" alt=""></a>
+        <a><img src="images/works-tp.jpg" alt=""></a>
+        <a><img src="images/works-tp.jpg" alt=""></a>
+        <a><img src="images/works-tp.jpg" alt=""></a>
+        <a><img src="images/works-tp.jpg" alt=""></a>
+        <a><img src="images/works-tp.jpg" alt=""></a>
+    </div>
+    <a href="works.html" class="more-btn">查看更多</a>
+</div>
+
+<div class="index-culture">
+    <div class="index-title">
+        <img src="images/index-culture-title.png" alt="">
+    </div>
+    <div class="index-culture-content clear">
+        <div class="index-culture-content-left clear">
+            <a href="">
+                <h4><span>补</span>基础</h4>
+                <p>高考难度系数比例 2：6：2，对于考生而言，最关键的就是80%的基础分数。</p>
+                <img src="images/lesson-icon.png" alt="">
+                <img src="images/small-icon.png" alt="">
+            </a>
+            <a href="">
+                <h4><span>提</span>技巧</h4>
+                <p>高考难度系数比例 2：6：2，对于考生而言，最关键的就是80%的基础分数。</p>
+                <img src="images/lesson-icon.png" alt="">
+                <img src="images/small-icon.png" alt="">
+            </a>
+            <a href="">
+                <h4><span>抓</span>重点</h4>
+                <p>高考难度系数比例 2：6：2，对于考生而言，最关键的就是80%的基础分数。</p>
+                <img src="images/lesson-icon.png" alt="">
+                <img src="images/small-icon.png" alt="">
+            </a>
+            <a href="">
+                <h4><span>练</span>真题</h4>
+                <p>高考难度系数比例 2：6：2，对于考生而言，最关键的就是80%的基础分数。</p>
+                <img src="images/lesson-icon.png" alt="">
+                <img src="images/small-icon.png" alt="">
+            </a>
+        </div>
+        <img src="images/index-video-pic.jpg" alt="">
+    </div>
+</div>
+
+<div class="index-en">
+    <div class="index-title">
+        <img src="images/index-en-title.png" alt="">
+    </div>
+
+    <div class="index-en-content clear">
+        <a href="">
+            <img src="images/index-en-pic.jpg" alt="">
+            <p>服务设施</p>
+            <div>
+                <h4>博昱教室</h4>
+                <p>一个良好的教学氛围离不开干净整洁的教学环境，博昱美术教室在有了教学所需要的整洁环境外... ...</p>
+                <img src="images/right-btn3.png" alt="">
+            </div>
+        </a>
+        <a href="">
+            <img src="images/index-en-pic.jpg" alt="">
+            <p>服务设施</p>
+            <div>
+                <h4>博昱教室</h4>
+                <p>一个良好的教学氛围离不开干净整洁的教学环境，博昱美术教室在有了教学所需要的整洁环境外... ...</p>
+                <img src="images/right-btn3.png" alt="">
+            </div>
+        </a>
+        <a href="">
+            <img src="images/index-en-pic.jpg" alt="">
+            <p>服务设施</p>
+            <div>
+                <h4>博昱教室</h4>
+                <p>一个良好的教学氛围离不开干净整洁的教学环境，博昱美术教室在有了教学所需要的整洁环境外... ...</p>
+                <img src="images/right-btn3.png" alt="">
+            </div>
+        </a>
+        <a href="">
+            <img src="images/index-en-pic.jpg" alt="">
+            <p>服务设施</p>
+            <div>
+                <h4>博昱教室</h4>
+                <p>一个良好的教学氛围离不开干净整洁的教学环境，博昱美术教室在有了教学所需要的整洁环境外... ...</p>
+                <img src="images/right-btn3.png" alt="">
+            </div>
+        </a>
+    </div>
+
+    <a href="about-en.html" class="more-btn">查看更多</a>
+</div>
+
+<div class="index-answer">
+    <div class="index-title">
+        <img src="images/index-answer-title.png" alt="">
+    </div>
+
+    <div class="index-answer-content">
+        <div class="index-answer-content-center clear">
+            <div>
+                <h4>家长感言</h4>
+                <p>Voice From Parents</p>
+            </div>
+            <img src="images/index-answer-pic.jpg" alt="">
+            <section>
+                <div class="js-answer-change">
+                    <h4>1某某家长对博昱杨校长说：</h4>
+                    <p>尊敬的杨校长您好，感谢您一直以来对某某的关心支持，某某取得今天得成绩跟您的关注指导是分不开的，刚开始我对孩子的担忧，是您让我相信孩子可以跟上，博昱做到了，某某今天的成绩我很满意，真诚的感恩您，某某妈妈向您深深鞠躬！</p>
+                </div>
+                <div style="display: none" class="js-answer-change">
+                    <h4>2某某家长对博昱杨校长说：</h4>
+                    <p>尊敬的杨校长您好，感谢您一直以来对某某的关心支持，某某取得今天得成绩跟您的关注指导是分不开的，刚开始我对孩子的担忧，是您让我相信孩子可以跟上，博昱做到了，某某今天的成绩我很满意，真诚的感恩您，某某妈妈向您深深鞠躬！</p>
+                </div>
+                <div style="display: none" class="js-answer-change">
+                    <h4>3某某家长对博昱杨校长说：</h4>
+                    <p>尊敬的杨校长您好，感谢您一直以来对某某的关心支持，某某取得今天得成绩跟您的关注指导是分不开的，刚开始我对孩子的担忧，是您让我相信孩子可以跟上，博昱做到了，某某今天的成绩我很满意，真诚的感恩您，某某妈妈向您深深鞠躬！</p>
+                </div>
+                <span class="js-answer-btn-left"><</span>
+                <span class="js-answer-btn-right">></span>
+            </section>
+        </div>
+    </div>
+    <div class="index-answer-content">
+        <div class="index-answer-content-center clear">
+            <div>
+                <h4>招生问答</h4>
+                <p>Enrolment problem</p>
+            </div>
+            <img src="images/index-answer-pic.jpg" alt="">
+            <section>
+                <div class="js-answer-change1">
+                    <h4>1某某家长对博昱杨校长说：</h4>
+                    <p>尊敬的杨校长您好，感谢您一直以来对某某的关心支持，某某取得今天得成绩跟您的关注指导是分不开的，刚开始我对孩子的担忧，是您让我相信孩子可以跟上，博昱做到了，某某今天的成绩我很满意，真诚的感恩您，某某妈妈向您深深鞠躬！</p>
+                </div>
+                <div style="display: none" class="js-answer-change1">
+                    <h4>2某某家长对博昱杨校长说：</h4>
+                    <p>尊敬的杨校长您好，感谢您一直以来对某某的关心支持，某某取得今天得成绩跟您的关注指导是分不开的，刚开始我对孩子的担忧，是您让我相信孩子可以跟上，博昱做到了，某某今天的成绩我很满意，真诚的感恩您，某某妈妈向您深深鞠躬！</p>
+                </div>
+                <div style="display: none" class="js-answer-change1">
+                    <h4>3某某家长对博昱杨校长说：</h4>
+                    <p>尊敬的杨校长您好，感谢您一直以来对某某的关心支持，某某取得今天得成绩跟您的关注指导是分不开的，刚开始我对孩子的担忧，是您让我相信孩子可以跟上，博昱做到了，某某今天的成绩我很满意，真诚的感恩您，某某妈妈向您深深鞠躬！</p>
+                </div>
+                <span class="js-answer-btn-left1"><</span>
+                <span class="js-answer-btn-right1">></span>
+            </section>
+        </div>
+    </div>
+</div>
+
+<div class="index-contact">
+    <div class="index-contact-center">
+        <ul class="clear">
+            <li class="clear">
+                <div>
+                    <img src="images/tel1.png" alt="">
+                    <p>电话</p>
+                </div>
+                <section>
+                    <p>027-82351966(座机)</p>
+                    <br>
+                    <p>153 2719 0902(杨老师)</p>
+                </section>
+            </li>
+            <li class="clear">
+                <div>
+                    <img src="images/qq1.png" alt="">
+                    <p>QQ</p>
+                </div>
+                <section>
+                    <p>342209962</p>
+                </section>
+            </li>
+            <li class="clear">
+                <div>
+                    <img src="images/GPS1.png" alt="">
+                    <p>洪山博昱</p>
+                </div>
+                <section>
+                    <p>武汉市江岸区解放大道2463号博昱美术培训学校（轻轨一号线徐州新村站B出口旁100米）</p>
+                </section>
+            </li>
+            <li class="clear">
+                <div>
+                    <img src="images/GPS1.png" alt="">
+                    <p>江岸博昱</p>
+                </div>
+                <section>
+                    <p>武汉市洪山区华中师范大学林勘学生公寓B栋（华师研究生院旁）</p>
+                </section>
+            </li>
+        </ul>
+        <div class="clear two-index">
+            <div>
+                <img src="images/two-code.png" alt="">
+                <p>微博公众号<span>博昱art</span></p>
+            </div>
+            <div>
+                <img src="images/two-code.png" alt="">
+                <p>微信公众号<span>博昱美术学校</span></p>
+            </div>
+            <div>
+                <img src="images/two-code.png" alt="">
+                <p>杨校长QQ<span>博的空间</span></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div>
+        <h4>友情链接</h4>
+        <a href="">清华美术学院</a>
+        <a href="">中国美术学院</a>
+        <a href="">中央美术学院</a>
+        <a href="">四川美术学院</a>
+        <a href="">广州美术学院</a>
+        <a href="">鲁迅美术学院</a>
+        <a href="">天津美术学院</a>
+        <a href="">西安美术学院</a>
+        <a href="">湖北美术学院</a>
+        <p><a href="https://cbeid.com">技术支持：浙江北鼎网络科技有限公司</a>Copyright © 2017 武汉博昱美术学校. All Rights Reserved. 备案号：鄂 ICP备17018799号-1</p>
+    </div>
+</footer>
+<div class="fixed-apply">
+    <div class="clear">
+        <img src="images/fixed-bg.png" alt="">
+        <div class="fixed-apply-content">
+            <p>联系我们 即可获得</p>
+            <p>0元试学 名师教学</p>
+            <form>
+                <label>
+                    <span>姓名：</span>
+                    <input type="text">
+                </label>
+                <label>
+                    <span>电话：</span>
+                    <input type="text">
+                </label>
+                <div>
+                    <span>提交信息</span>
+                    <input type="submit" value="">
+                </div>
+                <span class="xx">×</span>
+            </form>
+
+        </div>
+    </div>
+</div>
+
+<div class="fixed-contact">
+    <a href="apply.html">
+        <img src="images/fixed-tel.png" alt="">
+        <p>电话咨询</p>
+    </a>
+    <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=123456789&site=qq&menu=yes">
+        <img src="images/fixed-wx.png" alt="">
+        <p>微信咨询</p>
+        <div>
+            <img src="images/two-code.png" alt="">
+            <img src="images/right-jt-white.png" alt="">
+        </div>
+    </a>
+    <a href="">
+        <img src="images/fixed-contact.png" alt="">
+        <p>在线咨询</p>
+    </a>
+    <a href="">
+        <img src="images/fixed-teach.png" alt="">
+        <p>预报试学</p>
+    </a>
+    <a href="apply.html">
+        <img src="images/fixed-apply.png" alt="">
+        <p>网上报名</p>
+    </a>
+    <a class="fixed-back-top">
+        <img src="images/back-top-icon.png" alt="">
+    </a>
+</div>
+</body>
+</html>
+<script src="js/meta-pc.js"></script>
+<script src="js/common.js"></script>
+<script src="js/index.js"></script>
